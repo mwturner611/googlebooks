@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import API from "../utils/Api";
 import Header from "../components/Header";
+import Description from "../components/Description";
 
 
 function Search() {
@@ -21,8 +22,10 @@ function Search() {
   }, []);
 
     return(
-
-        <Header></Header>
+        <div>
+        <Header/>
+        <Description/>
+        </div>
     )
 }
 
