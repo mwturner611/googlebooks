@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import API from "../utils/Api";
 import Header from "../components/Header";
 import Description from "../components/Description";
+import Form from "../components/Search";
 
 
 function Search() {
@@ -25,6 +26,7 @@ function Search() {
         <div>
         <Header/>
         <Description/>
+        <Form/>
         </div>
     )
 }

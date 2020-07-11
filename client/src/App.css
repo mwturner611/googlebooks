@@ -2,5 +2,9 @@
     margin: 15px;
     display: inline-block;
     vertical-align: middle
-   
+}
+
+body {
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
