@@ -8,3 +8,12 @@ body {
     margin-left: 1vw;
     margin-right: 1vw;
 }
+
+.container-fluid {
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: #42a0e4;
+    Margin-top: 20px;
+    padding: 5px;
+
+}
