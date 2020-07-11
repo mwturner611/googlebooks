@@ -25,6 +25,8 @@ function deleteBook(id) {
         .catch(err => console.log(err));
 };
 
+console.log(books);
+
 return (
     <div>It's the Saved Books page!</div>
 )
