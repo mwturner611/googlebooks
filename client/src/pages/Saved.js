@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import API from "../utils/Api";
+import Header from "../components/Header";
+
 
 function Saved(){
 const [books, setBooks] = useState([])
@@ -28,7 +30,11 @@ function deleteBook(id) {
 console.log(books);
 
 return (
-    <div>It's the Saved Books page!</div>
+
+    <div>
+        <Header/>
+        
+        It's the Saved Books page!</div>
 )
 
 

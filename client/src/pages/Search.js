@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import API from "../utils/Api";
+import Header from "../components/Header";
 
 
 function Search() {
@@ -9,7 +10,7 @@ function Search() {
     function searchTitle(search){
         API.searchBooks(search)
             .then(res =>
-                    console.log(res.data.items)
+                    setResults(res.data.items)
             )
             .catch(err => console.log(err));
     };
@@ -20,10 +21,8 @@ function Search() {
   }, []);
 
     return(
-        <div>It's the Search page
 
-            
-        </div>
+        <Header></Header>
     )
 }
 
