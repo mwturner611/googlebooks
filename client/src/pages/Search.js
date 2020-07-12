@@ -19,18 +19,24 @@ function Search() {
             .catch(err => console.log(err));
     };
 
-      // Load all books and store them with setBooks
-  useEffect(() => {
-    searchTitle("Titanic")
-  }, []);
+    function handleInputChange(event) {
+      const entered = event.target.value;
+      setLookUp(entered)
+    };
 
-  
+    function handleFormSubmit(event){
+      event.preventDefault();
+      searchTitle(lookup)
+    }
 
-    return(
+   return(
         <div>
         <Header/>
         <Description/>
-        <Form/>
+        <Form
+        handleInputChange={handleInputChange}
+        handleFormSubmit={handleFormSubmit}
+        />
         <div className="Container-fluid">
           {results.map (result => (
             <Results

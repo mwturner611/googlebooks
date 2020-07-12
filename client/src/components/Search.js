@@ -1,15 +1,15 @@
 import React from "react";
 
 
-function Search() {
+function Search(props) {
     return(
         <form>
         
         <div class="form-group">
           <label for="booksearch">Enter Book Titles below</label>
-          <input type="title" class="form-control" id="exampleInputPassword1" placeholder="Harry Potter"/>
+          <input onChange={props.handleInputChange} type="title" class="form-control" id="exampleInputPassword1" placeholder="My next book!"/>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button onClick={props.handleFormSubmit} type="submit" class="btn btn-primary">Submit</button>
       </form>
     );
 }

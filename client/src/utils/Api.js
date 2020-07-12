@@ -13,6 +13,6 @@ export default {
         return axios.delete("/api/books/" + id);
     },
     searchBooks: function(search){
-        return axios.get('https://www.googleapis.com/books/v1/volumes?q=search' + search);
+        return axios.get('https://www.googleapis.com/books/v1/volumes?q=' + search);
     }
 };
