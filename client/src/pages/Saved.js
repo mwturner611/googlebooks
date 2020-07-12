@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import API from "../utils/Api";
 import Header from "../components/Header";
 import Description from "../components/Description";
+import Results from "../components/Results";
+
 
 function Saved(){
 const [books, setBooks] = useState([])
@@ -11,7 +13,6 @@ const [books, setBooks] = useState([])
 useEffect(() => {
     loadBooks()
 }, [])
-
 
 function loadBooks(){
     API.getBooks()
@@ -27,13 +28,28 @@ function deleteBook(id) {
         .catch(err => console.log(err));
 };
 
-console.log(books);
+
 
 return (
 
     <div>
         <Header/>
         <Description/>
+        <div className="Container-fluid">
+          {books.map (book => (
+            <Results
+            imageLinks ={book.image}
+            infoLink={book.link}
+            title={book.title}
+            authors={book.authors}
+            description={book.description}
+            Button={() => (
+              <button onClick={() => deleteBook(book._id)} type="button" className="btn btn-danger">Delete</button>
+            )}
+            />
+          ))}
+        
+        </div>
         </div>
 )
 

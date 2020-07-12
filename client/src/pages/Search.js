@@ -23,11 +23,23 @@ function Search() {
       const entered = event.target.value;
       setLookUp(entered)
     };
-
+console.log(results);
     function handleFormSubmit(event){
       event.preventDefault();
       searchTitle(lookup)
     }
+    function saveBook(id){
+      const book = results.find(b => b.id === id);
+
+      API.saveBook({
+        image: book.volumeInfo.imageLinks.thumbnail,
+        link: book.volumeInfo.infoLink,
+        title: book.volumeInfo.title,
+        authors: book.volumeInfo.authors,
+        description: book.volumeInfo.description 
+      })
+      .then(() => searchTitle(lookup));
+    };
 
    return(
         <div>
@@ -40,11 +52,15 @@ function Search() {
         <div className="Container-fluid">
           {results.map (result => (
             <Results
+            key={result.id}
             imageLinks ={result.volumeInfo.imageLinks.thumbnail}
             infoLink={result.volumeInfo.infoLink}
             title={result.volumeInfo.title}
             authors={result.volumeInfo.authors}
-            description={result.volumeInfo.description}  
+            description={result.volumeInfo.description}
+            Button={() => (
+              <button onClick={() => saveBook(result.id)} type="button" className="btn btn-primary">Save</button>
+            )}
             />
           ))}
         

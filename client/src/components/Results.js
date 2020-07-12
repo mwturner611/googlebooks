@@ -8,7 +8,7 @@ function Results(props) {
             <div className="card mb-3">
                 <img className="card-img-top" src={props.imageLinks} alt="Book image"/>
                 <a href={props.infoLink} type="button" className="btn btn-success">View</a>
-                <button type="button" class="btn btn-primary">Save</button>
+                <props.Button/>
                     <div className="card-body">
                         <h5 className="card-title">{props.title}</h5>
                             <h6>Written By {props.authors}</h6>
