@@ -14,11 +14,11 @@ MongoDB, Mongoose, Node.js, Express, Heroku, React.js, JavaScript, HTML, CSS and
 
 ## Table of Contents
 * [Top of Page](#description)
-* [Technologies Used](#technologies)
+* [Technologies Used](#technology)
 * [Usage](#how)
 * [License](#license)
 * [Contributing](#contributing)
-* [Contacts](#contacts)
+* [Contacts](#contact)
 
 ## Picture
 <img src="client/src/images/googleBooks.JPG">
