@@ -15,7 +15,7 @@ MongoDB, Mongoose, Node.js, Express, Heroku, React.js, JavaScript, HTML, CSS and
 ## Table of Contents
 * [Top of Page](#description)
 * [Technologies Used](#technology)
-* [Usage](#how)
+* [Usage](#usage)
 * [License](#license)
 * [Contributing](#contributing)
 * [Contacts](#contact)
@@ -23,7 +23,7 @@ MongoDB, Mongoose, Node.js, Express, Heroku, React.js, JavaScript, HTML, CSS and
 ## Picture
 <img src="client/src/images/googleBooks.JPG">
 
-## How to use this code
+## Usage
 1. Enter a title/author/description of a book you are interested in reading.
 2. Look through the results.
 3. Save or view more details of any resulting book.
@@ -32,7 +32,7 @@ MongoDB, Mongoose, Node.js, Express, Heroku, React.js, JavaScript, HTML, CSS and
 ## License
 This project is licensed under The MIT License (MIT).
 
-## Contributing Guidelines
+## Contributing
 All contributions and suggestions are welcome! For direct contributions, please fork the repository and file a pull request.
 
 ## Contact
