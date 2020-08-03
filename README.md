@@ -1,26 +1,41 @@
+<img alt="License" src="https://img.shields.io/badge/-MIT License-blue">
+
 # Google Books
 ## Description
-This app allows you to search for google books and save a list!
+This app allows you to search for google books and save the in a list!
 
-# Contributors
+[Click here to live link](https://google-books-8675309.herokuapp.com/)
+
+## Contributor
 * mwturner611
 
-# Technology
-MongoDB, Mongoose, Node.js, React.js.
+## Technology
+MongoDB, Mongoose, Node.js, Express, Heroku, React.js, JavaScript, HTML, CSS and Axios.
 
-# License
-This project is licensed under The MIT License (MIT).
+## Table of Contents
+* [Top of Page](#description)
+* [Technologies Used](#technologies)
+* [Usage](#how)
+* [License](#license)
+* [Contributing](#contributing)
+* [Contacts](#contacts)
 
-# How to use this code
+## Picture
+<img src="client/src/images/googleBooks.JPG">
+
+## How to use this code
 1. Enter a title/author/description of a book you are interested in reading.
 2. Look through the results.
 3. Save or view more details of any resulting book.
 4. Go to your "Saved Page" to view any books you've saved.
 
-# Contributing Guidelines
+## License
+This project is licensed under The MIT License (MIT).
+
+## Contributing Guidelines
 All contributions and suggestions are welcome! For direct contributions, please fork the repository and file a pull request.
 
-# Contact
+## Contact
 * Name: Matt Turner (@mwturner611)
 * e-mail: mwturner611@gmail.com
 * LinkedIn: https://www.linkedin.com/in/matt-turner-ba328211a/*
